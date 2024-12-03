@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <title>BANGE</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" style="height: 5rem; " data-bs-theme="dark">
+        <div class="container">
+        <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+            Aperture
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 justify-content-between" style="height: 40px;">
+            
+            <button class="ui-btn">
+                <span>
+                <a href="exo1.html">HOME</a>
+                </span>
+            </button>
+                <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
+                <li class="nav-item"><a class="nav-link" href="cv/index.html">Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">
+                <i class="bi bi-basket2-fill"></i>
+                <i class="bi bi-heart"></i>
+                
+                </a></li>
+            </ul>
+
+            
+            <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+            <button type="button" class="btn btn-outline-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"></path>
+            </svg>
+                
+            </button>
+            <button type="button" style="margin-left: 10px;" class="btn btn-outline-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"></path>
+            </svg>
+                
+            </button>
+            
+                <button type="button" style="margin-left: 20px;"  class="btn btn-outline-primary me-2"><a class="nav-link" href="login.html">Login</a></button>
+                <button type="button" style="margin-left: 10px;" class="btn btn-primary"><a class="nav-link" href="sign.html">Sign-up</a></button>
+            
+            </div>
+        </div>
+        
+        </div>
+    </nav>
+
+    <main>
+            <img src="image/Screenshot 2024-11-17 204037.png" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+            <div class="tt-block-title">
+                <h2 class="tt-title">Découvrez nos collections phares</h2><div class="tt-description">de la marque BANGE !</div>
+            </div>
+            <br>
+
+
+
+
+
+
+
+<div id="carouselExampleFade" style="height: 900px;" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+    <div class="carousel-item active" >
+        <img src="image/Accessoire_1_c572f1c1-2b3c-4257-8a42-2e0b124115a0_846x.webp" style="height: 900px;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="image/Sport_1_846x.webp" class="d-block w-100" style="height: 900px;" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="image/Sac_a_dos_1_79f6f75e-1213-4300-a201-474d090b8b8f_1_1690x.webp" style="height: 900px;" class="d-block w-100" alt="...">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="tt-block-title">
+    <h2 class="tt-title">VOICI la nouvelle collection </h2><div class="tt-description">de la marque BANGE !</div>
+</div>
+
+
+
+<div id="carouselExampleSlidesOnly" style="height: 900px;" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnlyyy">
+        <div class="carousel-inner">
+            <div  class="carousel-item active ">
+                <img src="image/✨🌄 Préparez-vous pour l_aventure avec le sac de camping K02 de Bange _ 🏕️ Ce sac robuste et imperméable est idéal pour les campeurs et les randonneurs_ offrant un espace généreux e_1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="image/✨🌄 Préparez-vous pour l_aventure avec le sac de camping K02 de Bange _ 🏕️ Ce sac robuste et imperméable est idéal pour les campeurs et les randonneurs_ offrant un espace généreux e_3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div   class="carousel-item ">
+                <img src="image/✨🌄 Préparez-vous pour l_aventure avec le sac de camping K02 de Bange _ 🏕️ Ce sac robuste et imperméable est idéal pour les campeurs et les randonneurs_ offrant un espace généreux et(.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnlyy" style="height: 900px;" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div  class="carousel-item active ">
+            <img src="image/https___www.instagram.com_p_DBQmFeaI__q_igsh_YzczbWN3MTI3MnRi(JPG).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="image/https___www.instagram.com_p_DCOoPGzoWd3_igsh_b3Z3cHAzMnRrcjR4(JPG).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+            <img src="image/https___www.instagram.com_p_DClui2FIDxQ_igsh_Nm1mdGNkZmk5dGxn(JPG).jpg" class="d-block w-100" alt="...">
+        </div>
+
+        </div>
+    
+    </div>
+    
+</div>
+
+
+
+
+
+
+    <button type="button" class="btnn" style="justify-content: center;width: 100%;">
+        <strong><a href="sign.html" >SHOP NOW !</a></strong>
+        <div id="container-stars">
+        <div id="stars"></div>
+        </div>
+    
+        <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        </div>
+      </button>
+
+        
+<div class="tt-footer-center tt-color-scheme-03">
+    <div id="conatainer" class="container">
+      <div class="tt-row">
+<div class="tt-mobile-collapse">
+            <h4 class="tt-collapse-title tt-open">Contact</h4>
+            <div class="tt-collapse-content">
+            <h6>MAZDO TRADE</h6>
+
+    <div class="cordonner">
+        
+        <p><span>Adresse:</span>24 Av. de la République, Ez Zahra 2034</p>
+            <p><span>Téléphone :</span> +216 52 000 340</p>
+            <p><span>E-mail:</span> <a href="contact@bange.tn">contact@bange.tn</a></p>
+        
+    </div>
+
+            </div>
+        </div>
+</div>
+    </div>
+</div>
+
+
+
+    <div class="container">
+    <div class="tt-row">
+        
+        
+
+        <div class="tt-col-left"><div class="tt-col-item tt-logo-col">
+            <a href="/" class="tt-logo tt-logo-alignment"><img src="https://bange.tn/cdn/shop/files/bange_logo_main_95x.png?v=1672830562" srcset="//bange.tn/cdn/shop/files/bange_logo_main_95x.png?v=1672830562 1x, //bange.tn/cdn/shop/files/bange_logo_main_190x.png?v=1672830562 2x" alt="" class="tt-retina"></a>
+        </div>
+
+
+    </div>
+  </div>
+  
+  
+      </div>
+    </div>
+  </div></footer>
+  
+  
+  </div>
+
+
+
+
+
+
+
+
+  
+
+<script src="exo.js"></script>
+</body>
+</html>

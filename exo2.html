@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <title>BANGE</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" style="height: 5rem; " data-bs-theme="dark">
+        <div class="container">
+        <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+            Aperture
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 justify-content-between" style="height: 40px;">
+
+                <button class="ui-btn">
+                <span>
+                <a href="exo1.html">HOME</a>
+                </span>
+                </button>
+                <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
+                <li class="nav-item"><a class="nav-link" href="cv/index.html">Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">
+                <i class="bi bi-basket2-fill"></i>
+                <i class="bi bi-heart"></i>
+                
+                </a></li>
+            </ul>
+
+            <div class="grid"></div>
+            <div id="poda">
+            <div class="glow"></div>
+            <div class="darkBorderBg"></div>
+            <div class="darkBorderBg"></div>
+            <div class="darkBorderBg"></div>
+            
+            <div class="white"></div>
+            
+            <div class="border"></div>
+            
+            <div id="main">
+                <input placeholder="Search..." type="text" name="text" class="input" />
+                <div id="input-mask"></div>
+                <div id="pink-mask"></div>
+                <div class="filterBorder"></div>
+                <div id="filter-icon">
+                <svg
+                    preserveAspectRatio="none"
+                    height="27"
+                    width="27"
+                    viewBox="4.8 4.56 14.832 15.408"
+                    fill="none"
+                >
+                    <path
+                    d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z"
+                    stroke="#d6d6e6"
+                    stroke-width="1"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <div id="search-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    height="24"
+                    fill="none"
+                    class="feather feather-search"
+                  >
+                    <circle stroke="url(#search)" r="8" cy="11" cx="11"></circle>
+                    <line
+                      stroke="url(#searchl)"
+                      y2="16.65"
+                      y1="22"
+                      x2="16.65"
+                      x1="22"
+                    ></line>
+                    <defs>
+                      <linearGradient gradientTransform="rotate(50)" id="search">
+                        <stop stop-color="#f8e7f8" offset="0%"></stop>
+                        <stop stop-color="#b6a9b7" offset="50%"></stop>
+                      </linearGradient>
+                      <linearGradient id="searchl">
+                        <stop stop-color="#b6a9b7" offset="0%"></stop>
+                        <stop stop-color="#837484" offset="50%"></stop>
+                      </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            </div>
+            </div>
+            
+            <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+            <button type="button" class="btn btn-outline-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"></path>
+            </svg>
+                
+            </button>
+            <button type="button" style="margin-left: 10px;" class="btn btn-outline-danger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"></path>
+            </svg>
+                
+            </button>
+            
+
+            </div>
+        </div>
+        
+        </div>
+    </nav>
+
+
+
+
+
+<div>
+
+
+  
+</div>
+
+
+
+<button style="width: 100%;">
+  BANGE
+</button>
+
+
+
+
+    <div class="row">
+    <div class="card col-md-6" style="width: 18rem;">
+      
+      <img src="image/NOIR_7af79ce2-3be3-47a6-abfd-1bed39dcad25_1024x1024.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange BG025</h3>
+        <p class="card-text">Taille de l'écran : Compatible avec des ordinateurs jusqu'à 15.6 pouces.
+          Matière : Tissu Oxford haute densité, enduit TPU.
+          Type de fermeture : Zippers renforcées et imperméables.
+          Revêtement : Robuste et imperméable pour une protection optimale.
+          Compartiment principal : À fermeture éclair pour un accès facile.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/NOIR_6_1024x1024.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange BG01</h3>
+        <p class="card-text">DURABILITÉ
+          Revêtement : TPU durable et résistant aux intempéries.
+          Résistance : Haute résistance à l’usure et aux coupures.
+          Fermetures : Zips YKK renforcés et étanches.
+          FONCTIONS INTELLIGENTES
+          Poches : Rembourrées pour ordinateur (jusqu'à 15,6") et tablette (12,9").
+          Organisation : Stockage intelligent et poche latérale zippée pour bouteille.
+
+          </p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/5_3_1024x1024.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange BG014</h3>
+        <p class="card-text">FONCTIONS INTELLIGENTES
+          Compartiment : Rembourré pour ordinateur portable 15,6" et tablette 12,9".
+          Organisation : Stockage intelligent avec une organisation professionnelle.
+          Poche latérale : Étanche pour le parapluie.
+          Connectivité : Port USB intégré pour une connexion facile.
+          Panneau arrière : Matelassé et respirant.
+          Bretelles : Matelassées et ergonomiques S-Curve.
+          .</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/BG0262_2_1024x1024.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange BG026</h3>
+        <p class="card-text">FONCTIONS INTELLIGENTES
+
+          Pochette de protection rembourrée pour ordinateur jusqu'à 15.6" et tablette 12.9"
+          Stockage intelligent - Organisation professionnelle
+          Port USB intégré - Connexion facile
+          Porte-clés détachable
+          Poche arrière discrète pour les objets de valeur
+          CONFORT
+          Panneau arrière matelassé et respirant
+          Bretelles matelassées ergonomiques S-Curve
+          Sangle de fixation pour trolley</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/SKU-02-black_1024x1024.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange Bg02</h3>
+        <p class="card-text">FONCTIONS INTELLIGENTES
+          Compartiment : Indépendant et rembourré pour ordinateur jusqu'à 15,6" et tablette 12,9".
+          Organisation : Stockage intelligent avec une organisation professionnelle.
+          Poche latérale : Étanche pour bouteille ou parapluie.
+          Connectivité : Port USB intégré pour une connexion facile.
+          Poche arrière : Discrète pour les objets de valeur.
+          CONFORT
+          Panneau arrière : Matelassé et respirant.
+</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bangebg009.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange Bg099</h3>
+        <p class="card-text">Sécurité :
+
+          Serrure antivol approuvée par la TSA.
+          Poche arrière discrète pour les objets de valeur.
+          Confort :
+          
+          Panneau arrière matelassé et respirant pour un confort optimal.
+          Bretelles matelassées ergonomiques S-Curve.
+          Sangle de fixation pour trolley, facilitant le transport
+          Forte résistance aux chocs, à l'eau et à la poussière, tout en gardant sa forme d’origine.
+          Fermetures éclair YKK renforcées et étanches.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bangebg019.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bange Bg019</h5>
+        <p class="card-text">FONCTIONS INTELLIGENTES
+
+          Pochette : Rembourrée pour ordinateur jusqu'à 15,6" et tablette 12,9".
+          Organisation : Stockage intelligent avec une organisation professionnelle.
+          Connectivité : Port USB intégré pour une connexion facile.
+          Poche arrière : Discrète pour les objets de valeur.
+          CONFORT
+          
+          Panneau arrière : Matelassé et respirant.
+          Bretelles : Matelassées et ergonomiques S-Curve.
+          Sangle de fixation : Pour trolley.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bg053_3_1024x1024.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange Bg053</h3>
+        <p class="card-text">Durabilité :
+
+          Revêtement en TPU résistant aux intempéries, avec une forte résistance à l’usure et aux coupures, et des fermetures éclair renforcées.
+          Fonctions Intelligentes :
+          
+          Compartiment rembourré pour ordinateur jusqu'à 17,3" et tablette 12,9", avec un système de stockage intelligent pour une organisation optimale.
+          Confort :
+          
+          Panneau arrière matelassé et respirant, bretelles ergonomiques S-Curve, et sangle de fixation pour trolley.
+          Volume extensible : de 24 au 30 Litres</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bangebg054.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange BG054</h3>
+        <p class="card-text">Durabilité :
+
+          Revêtement en TPU durable et résistant aux intempéries, offrant une forte résistance à l’usure et aux coupures, avec des fermetures éclair renforcées.
+          Fonctions Intelligentes :
+          
+          Compartiment rembourré pour ordinateur jusqu'à 15,6" et tablette 12,9", permettant un stockage intelligent et une organisation professionnelle.
+          Confort :
+          
+          Panneau arrière matelassé et respirant, bretelles ergonomiques S-Curve, et sangle de fixation pour trolley.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/SKU-06_e680b974-723c-44fd-83bc-5e5f0b5ba629_1024x1024.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">BANGE BG051 </h3>
+        <p class="card-text">Fonctions Intelligentes :
+
+          Compartiment indépendant rembourré pour ordinateur jusqu'à 15,6".
+          Stockage intelligent pour une organisation professionnelle.
+          Compartiment étanche pour les accessoires de toilette.
+          Port USB intégré pour une connexion facile.
+          Poche arrière discrète pour les objets de valeur.
+          Confort :
+          
+          Panneau arrière matelassé et respirant.
+          Bretelles matelassées ergonomiques S-Curve.
+          Sangle de poitrine réglable.
+          Sangle de fixation pour trolley..</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bange092.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">BANGE BG092</h3>
+        <p class="card-text">Fonctions Intelligentes :
+
+          Compartiment rembourré pour ordinateur portable jusqu'à 15.6" et tablette 12.9".
+          Stockage intelligent pour une organisation professionnelle.
+          Poche latérale étanche pour le parapluie et port USB intégré pour une connexion facile.
+          Confort :
+          
+          Panneau arrière matelassé et respirant pour un confort optimal.
+          Bretelles matelassées ergonomiques S-Curve.
+          Passant arrière pour trolley, facilitant le transport.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bangebg017.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange BG017</h3>
+        <p class="card-text">SÉCURITÉ
+          Cadenas : Antivol approuvé par la TSA.
+          CONFORT
+          Panneau arrière : Matelassé et respirant.
+          Bretelles : Matelassées et ergonomiques S-Curve.
+          Sangle de poitrine : Réglable.
+          Passant arrière : Pour trolley.
+          INCLUS
+          Accessoires : Cadenas antivol, mousqueton porte-bouteille et housse étanche.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/Bangebg015.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bange BG015</h3>
+        <p class="card-text">FONCTIONS INTELLIGENTES
+          Compartiment : Indépendant et rembourré pour ordinateur jusqu'à 17,3".
+          Organisation : Stockage intelligent avec une organisation professionnelle.
+          Conception : Convertible en valise avec poignée latérale.
+          Poche interne : Étanche pour les accessoires de toilette.
+          Connectivité : Port USB intégré pour une connexion facile.
+          Poche arrière : Discrète pour les objets de valeur.
+          CONFORT
+          Panneau arrière : Matelassé et respirant.
+          Bretelles : Matelassées et ergonomiques S-Curve.
+          Sangle de poitrine : Réglable.
+          Sangle de fixation : Pour trolley</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/BG078_1_1024x1024.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">BG078</h3>
+        <p class="card-text">Fonctions Intelligentes :
+
+          Stockage intelligent pour une organisation professionnelle.
+          Poche latérale étanche pour les accessoires de toilette.
+          Compartiment étanche et respirant pour les chaussures, permettant une séparation propre.
+          Poche d'accès rapide à l'avant pour un accès facile aux objets essentiels.
+          Confort :
+          
+          Bandoulière réglable et amovible pour un transport personnalisé.
+          Poignée confortable pour une prise en main aisée.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/BG069.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">bg069</h3>
+        <p class="card-text">Matériaux de Haute Qualité :
+
+          Fabriqué en tissu Oxford imperméable, avec une doublure en polyester résistant à la chaleur, à l'usure et aux rides.
+          Polyvalence :
+          
+          Peut être utilisé comme sac à dos, sac à bandoulière ou sac à main, offrant plusieurs options de transport selon vos besoins.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/b5804.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">Bg044</h3>
+        <p class="card-text">Durabilité :
+
+          Revêtement TPU résistant aux intempéries, offrant une forte résistance à l’usure et aux coupures, tout en conservant sa forme.
+          Fermetures éclair YKK renforcées et étanches.
+          Fonctions Intelligentes :
+          
+          Pochette rembourrée pour tablette jusqu'à 11" et rangement organisé.
+          Poches d'accès rapide à l'avant et poche arrière discrète pour objets de valeur.
+          Confort :
+          
+          Panneau arrière matelassé et respirant avec bandoulière réglable et amovible.</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bg029.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">bg029</h3>
+        <p class="card-text">FONCTIONS INTELLIGENTES
+
+          Stockage intelligent avec organisation professionnelle
+          Compartiment étanche pour une bouteille ou un parapluie
+          Poche d'accès rapide sur l'avant
+          Poche arrière discrète pour les objets de valeur
+          CONFORT
+          
+          Panneau arrière matelassé et respirant
+          Bandoulière ajustable</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+
+
+    <div class="card col-md-6" style="width: 18rem;">
+      <img src="image/bg075.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title">bg075</h3>
+        <p class="card-text">
+          Revêtemen en TPU durable et résistant aux intempéries.
+          Forte résistance à l’usure et aux coupures, tout en gardant sa forme d’origine.
+          Fermetures éclair renforcées pour une protection optimale</p>
+        <a href="shop.html" class="btn btn-primary"> Shop Now </a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
